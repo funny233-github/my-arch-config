@@ -1,0 +1,29 @@
+configuration {
+	modes: [ combi ];
+	combi-modes: [ window, drun, run ];
+}
+
+entry {
+	placeholder: "Type here";
+	cursor: pointer;
+}
+
+element {
+	orientation: horizontal;
+	children: [ element-icon, element-text ];
+	spacing: 5px;
+}
+
+element-icon {
+	size: 2.5em;
+}
+
+entry, element-text {
+       /* text-color: red;*/
+	/*background-color: rgb(0,0,255);*/
+	vertical-align: 0.5;
+}
+
+inputbar {
+	enable: false;
+}
