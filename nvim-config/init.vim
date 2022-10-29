@@ -35,8 +35,6 @@ call plug#begin()
 let g:plug_url_format = 'git@github.com:%s.git'
 "多光标
 Plug 'mg979/vim-visual-multi', {'branch': 'master'}
-"补全
-Plug 'roxma/nvim-completion-manager'
 "文件树
 Plug 'preservim/nerdtree'
 "模糊查找
