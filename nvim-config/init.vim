@@ -31,6 +31,7 @@ set incsearch
 set autochdir
 set autoread
 set history=1000
+set expandtab
 call plug#begin()
 let g:plug_url_format = 'git@github.com:%s.git'
 "多光标
