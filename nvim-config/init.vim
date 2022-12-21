@@ -16,22 +16,40 @@ runtime! archlinux.vim
 
 " do not load defaults if ~/.vimrc is missing
 "let skip_defaults_vim=1
+"显示行数
 set number
+"显示相对行数
 set relativenumber
+"语法检查
 syntax on
+"底部显示模式
 set showmode
+"底部显示命令
 set showcmd
+"允许使用鼠标
 set mouse=a
-set cursorline
-set ruler
-set laststatus=2
-set hlsearch
-set showmatch
-set incsearch
-set autochdir
-set autoread
-set history=1000
+"将tab转换为空格
 set expandtab
+"tab空格数
+set softtabstop=2
+"光标所在行高亮
+set cursorline
+"状态栏显示光标位置
+set ruler
+"是否显示状态栏
+set laststatus=2
+"高亮查找的词
+set hlsearch
+"显示光标对应的一对括号
+set showmatch
+"自动跳到第一个匹配的搜索
+set incsearch
+"自动切换到工作目录
+set autochdir
+"打开文件监视
+set autoread
+"历史
+set history=1000
 call plug#begin()
 let g:plug_url_format = 'git@github.com:%s.git'
 "多光标
