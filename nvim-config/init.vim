@@ -31,7 +31,9 @@ set mouse=a
 "将tab转换为空格
 set expandtab
 "tab空格数
-set softtabstop=2
+set tabstop=4
+set softtabstop=4
+set shiftwidth=4
 "光标所在行高亮
 set cursorline
 "状态栏显示光标位置
