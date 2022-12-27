@@ -105,7 +105,7 @@ bindsym $mod+space focus mode_toggle
 
 #floating set
 
-floating_maximum_size 960 x 640
+#floating_maximum_size 960 x 640
 
 # focus the parent container
 bindsym $mod+a focus parent
