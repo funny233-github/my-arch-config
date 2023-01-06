@@ -99,16 +99,3 @@ map <C-m> :Minimap<CR>
     let g:VM_maps['Add Cursor At Pos']  = '<C-x>'
     let g:VM_maps['Add Cursor At Word'] = '<C-e>'
     let g:VM_maps['Remove Region']      = 'q'
-"hlchunk配置
-    " 支持哪些文件 默认为 '*.ts,*.js,*.json,*.go,*.c'
-      let g:hlchunk_files = '*.ts,*.js,*.json,*.go,*.c,*.java,*.cpp,*.md'
-    " 缩进线的高亮
-      au VimEnter * hi HLIndentLine ctermfg=244
-    " 延时 默认为50
-      let g:hlchunk_time_delay = 50
-    " 高亮线符号(逆时针) 默认为 ['─', '─', '╭', '│', '╰', '─', '>']
-      let g:hlchunk_chars=['─', '─', '╭', '│', '╰', '─', '>']
-    " 最大支持行数 默认3000(超过5000行的文件不使用hlchunk)
-      let g:hlchunk_line_limit = 5000
-    " 最大支持列数 默认100(超过500列的文件不使用hlchunk)
-      let g:hlchunk_col_limit = 500
