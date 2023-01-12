@@ -65,27 +65,28 @@ Plug 'jiangmiao/auto-pairs'
 "美化
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
+Plug 'connorholyday/vim-snazzy'
 "快速注释
 Plug 'preservim/nerdcommenter'
 "COC
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
-"小地图
-Plug 'wfxr/minimap.vim', {'do': ':!cargo install --locked code-minimap'}
-"找错
-"Plug 'w0rp/ale'
 "对齐
 Plug 'godlygeek/tabular'
 "格式化
 Plug 'chiel92/vim-autoformat'
-"作用域
-"Plug 'yaocccc/nvim-hlchunk'
 "缩进线
 Plug 'Yggdroot/indentLine'
 "ASCII diagram for vim
 Plug 'willchao612/vim-diagon'
+"为文本添加引号等
+Plug 'tpope/vim-surround'
+"显示函数，变量列表
+Plug 'liuchengxu/vista.vim'
+"在vim也能执行sudo
+Plug 'lambdalisue/suda.vim'
 call plug#end()
+color snazzy
 map <C-t> :NERDTreeToggle<CR>
-map <C-m> :Minimap<CR>
     let g:VM_theme                      = 'ocean'
     let g:VM_highlight_matches          = 'underline'
     let g:VM_maps                       = {}
