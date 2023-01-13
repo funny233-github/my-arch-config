@@ -85,8 +85,8 @@ Plug 'liuchengxu/vista.vim'
 "在vim也能执行sudo
 Plug 'lambdalisue/suda.vim'
 "markdown预览
-Plug 'iamcco/markdown-preview.nvim', { 'do': { -> mkdp#util#install() }, 'for': ['markdown', 'vim-plug']}
-"Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && yarn install'  }
+"Plug 'iamcco/markdown-preview.nvim', { 'do': { -> mkdp#util#install() }, 'for': ['markdown', 'vim-plug']}
+Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && yarn install'  }
 Plug 'iamcco/mathjax-support-for-mkdp'
 "markdown管理工具
 Plug 'vimwiki/vimwiki'
@@ -140,7 +140,7 @@ let g:mkdp_open_to_the_world = 0
 " useful when you work in remote vim and preview on local browser
 " more detail see: https://github.com/iamcco/markdown-preview.nvim/pull/9
 " default empty
-let g:mkdp_open_ip = '127.0.0.1'
+let g:mkdp_open_ip = ''
 
 " specify browser to open preview page
 " for path with space
@@ -196,7 +196,7 @@ let g:mkdp_markdown_css = ''
 let g:mkdp_highlight_css = ''
 
 " use a custom port to start server or empty for random
-let g:mkdp_port = '8080'
+let g:mkdp_port = ''
 
 " preview page title
 " ${name} will be replace with the file name
