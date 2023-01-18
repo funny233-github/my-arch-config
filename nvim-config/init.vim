@@ -16,6 +16,10 @@ runtime! archlinux.vim
 
 " do not load defaults if ~/.vimrc is missing
 "let skip_defaults_vim=1
+filetype on
+filetype indent on
+filetype plugin on
+filetype plugin indent on
 "显示行数
 set number
 "显示相对行数
@@ -75,7 +79,7 @@ Plug 'godlygeek/tabular'
 "格式化
 Plug 'chiel92/vim-autoformat'
 "缩进线
-Plug 'Yggdroot/indentLine'
+"Plug 'Yggdroot/indentLine', {'for':['python','java','C']}
 "ASCII diagram for vim
 Plug 'willchao612/vim-diagon'
 "为文本添加引号等
@@ -92,6 +96,7 @@ Plug 'iamcco/mathjax-support-for-mkdp'
 Plug 'vimwiki/vimwiki'
 call plug#end()
 color snazzy
+let g:airline_theme='badwolf'
 map <C-t> :NERDTreeToggle<CR>
     let g:VM_theme                      = 'ocean'
     let g:VM_highlight_matches          = 'underline'
@@ -113,7 +118,7 @@ let g:vimwiki_list = [{'path': '~/vimwiki/',
 
 " set to 1, nvim will open the preview window after entering the markdown buffer
 " default: 0
-let g:mkdp_auto_start = 1
+let g:mkdp_auto_start = 0
 
 " set to 1, the nvim will auto close current preview window when change
 " from markdown buffer to another buffer
