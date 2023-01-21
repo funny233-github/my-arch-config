@@ -233,7 +233,7 @@ exec --no-startup-id fcitx5
 #wallpaper
 exec --no-startup-id feh --bg-fill /home/funny/Picture/Wallpaper/wallpaper.png
 #flameshot
-bindsym Print --release exec /usr/bin/flameshot gui
+bindsym $mod+p --release exec /usr/bin/flameshot gui
 #i3lock-fancy
 bindsym $mod+i exec i3lock-fancy
 exec --no-startup-id polybar
