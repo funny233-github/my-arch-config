@@ -231,7 +231,7 @@ smart_gaps on
 #fcitx5
 exec --no-startup-id fcitx5
 #wallpaper
-exec --no-startup-id feh --bg-fill /home/funny/Picture/Wallpaper/wallpaper.png
+exec --no-startup-id feh --bg-fill /home/funny/Picture/Wallpaper/gnu-linux.png
 #flameshot
 bindsym $mod+p --release exec /usr/bin/flameshot gui
 #i3lock-fancy
