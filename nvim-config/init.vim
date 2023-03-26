@@ -94,6 +94,8 @@ Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && yarn install'  }
 Plug 'iamcco/mathjax-support-for-mkdp'
 "markdown管理工具
 Plug 'vimwiki/vimwiki'
+"输入法自动切换在vim
+Plug 'lilydjwg/fcitx.vim'
 call plug#end()
 color snazzy
 let g:airline_theme='badwolf'
