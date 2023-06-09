@@ -63,7 +63,7 @@ Plug 'mg979/vim-visual-multi', {'branch': 'master'}
 "文件树
 Plug 'preservim/nerdtree'
 "模糊查找
-Plug 'Yggdroot/LeaderF', {'do': './install.sh' }
+"Plug 'Yggdroot/LeaderF', {'do': './install.sh' }
 "自动配对括号
 Plug 'jiangmiao/auto-pairs'
 "美化
@@ -155,6 +155,7 @@ let g:mkdp_open_ip = ''
 " invalid: `/path/with\\ space/xxx`
 " default: ''
 let g:mkdp_browser = '/usr/bin/wyeb'
+"let g:mkdp_browser = '/usr/bin/firefox'
 
 " set to 1, echo preview page url in command line when open preview page
 " default is 0
