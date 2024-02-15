@@ -9,5 +9,5 @@ lvim.plugins = {
     require('config.plugins.vim-scarpet'),
     -- require('config.plugins.vimtex'),
     -- require('config.plugins.tabular'),
-    -- require('config.plugins.codeium-vim')
+    require('config.plugins.codeium-vim')
 }

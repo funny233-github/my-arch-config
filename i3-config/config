@@ -9,6 +9,9 @@
 #
 # Please see https://i3wm.org/docs/userguide.html for a complete reference!
 
+# windows Mod4
+# alt Mod1
+
 set $mod Mod4
 
 # Font for window titles. Will also be used by the bar unless a different font
@@ -45,7 +48,7 @@ bindsym XF86AudioMicMute exec --no-startup-id pactl set-source-mute @DEFAULT_SOU
 floating_modifier $mod
 
 # start a terminal
-bindsym $mod+Return exec i3-sensible-terminal
+bindsym $mod+Return exec wezterm
 
 # kill focused window
 bindsym $mod+Shift+q kill
@@ -222,7 +225,7 @@ bar {
         urgent_workspace   #16a085 #FDF6E3 #E5201D 
     } 
 }
-exec --no-startup-id picom
+# exec --no-startup-id picom
 
 #gaps
 for_window [class=".*"] border pixel 0
